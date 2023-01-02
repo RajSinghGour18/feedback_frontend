@@ -17,7 +17,7 @@ export default function PublicForm() {
         e.preventDefault()
 
         try{
-            await axios.post("/api/feedbacks",form)
+            await axios.post("https://feedback-backend.onrender.com/api/feedbacks",form)
             toast({title:"Feedback Devlivered Succesfully",status:"success",duration:1500})
             setForm({
                 name:"",message:""

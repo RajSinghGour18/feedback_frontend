@@ -20,7 +20,7 @@ export default function Login() {
         e.preventDefault()
 
         try{
-        const res = await axios.post("/api/user/login",form)
+        const res = await axios.post("https://feedback-backend.onrender.com/api/user/login",form)
         localStorage.setItem("TOKEN",res.data.token)
         toast({title:"Login Successfull",duration:1500,status:"success"})
         setForm({

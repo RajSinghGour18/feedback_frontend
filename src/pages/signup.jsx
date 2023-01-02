@@ -22,7 +22,7 @@ export default function Signup(){
         }
         
         try{
-            const res = await axios.post("/api/user/signup",{name:form.name,password:form.password})
+            const res = await axios.post("https://feedback-backend.onrender.com/api/user/signup",{name:form.name,password:form.password})
             toast({title:res.data.message,duration:1500,status:"success"})
             setForm({
                 name:"",password:"",cPassword:""
