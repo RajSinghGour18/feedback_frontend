@@ -19,7 +19,7 @@ export default function Feedbacks(){
 
     async function getFeedbacks(token){
         try{
-            const res = await axios.get("https://feedback-backend.onrender.coms/api/feedbacks",{
+            const res = await axios.get("https://feedback-backend.onrender.com/api/feedbacks",{
                 headers : {
                     authorization : `Bearer ${token}`
                 }
